@@ -1,0 +1,819 @@
+#joomsport-container .jsalright{
+	text-align: right;
+}
+#joomsport-container .jsalleft{
+	text-align: left;
+}
+.jsp_prediction_score {
+	min-width: 100px;
+}
+.jsp_prediction_score input[type="number"]::-webkit-outer-spin-button,
+.jsp_prediction_score input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.jsp_prediction_score input[type="number"] {
+	-moz-appearance: textfield;
+}
+#joomsport-container #jspRound input[type="number"] {
+	display: inline-block;
+	width:45px;
+	height: 30px;
+	padding: 6px;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #555;
+	text-align: center;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+	-o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.jspred_filterround{
+	margin-top:-7px;
+}
+#joomsport-container .table-responsive {
+	margin-bottom: 15px;
+}
+.selection .jspred_filterround .selectpicker {
+	margin-left: 10px!important;
+	text-align: left !important;
+}
+.selection .jspred_filterround .selectpicker:hover, .selection .jspred_filterround .selectpicker:focus, .selection .jspred_filterround .selectpicker:active {
+	background: none!important;
+}
+.jsOverflowHidden > .display select[name="jslimit"] {
+	display: inline-block;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	border-radius: 4px;
+}
+.jsOverflowHidden > .display select[name="jslimit"]:hover {
+	border-color: #adadad;
+}
+.jsOverflowHidden > .display select[name="jslimit"]:active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#joomsport-container .table > thead > tr > th {
+	text-align: center;
+}
+#joomsport-container .jsPredStatDIvFE thead > tr > th { font-size: 14px; font-weight: normal; background-color: #f3f3f3; border: 1px solid #fff; }
+#joomsport-container .jsPredStatDIvFE thead > tr:first-child > th:first-child, 
+#joomsport-container .jsPredStatDIvFE thead { border-bottom: 2px solid #d2d2d2; }
+#joomsport-container .jsPredStatDIvFE tbody tr:nth-of-type(odd) { background-color: #ffffff; }
+#joomsport-container .jsPredStatDIvFE tbody tr:nth-of-type(even) { background-color: #f9f9f9; }
+
+#joomsport-container .jspred_position_down, #joomsport-container .jspred_position_up{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin-top: -3px;
+	margin-right: -2px;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+}
+#joomsport-container .jspred_position_down {
+	border-top: 6px solid #e90052;
+}
+#joomsport-container .jspred_position_up{
+	border-bottom: 5px solid #13cf00;
+}
+#joomsport-container .jspred_position_current{
+	border-radius: 100%;
+	width: 8px;
+	height: 8px;
+	background: #adadad;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+}
+#joomsport-container .jspred_position_down_text{
+	font-size: 8px;
+	color:#e90052;
+}
+#joomsport-container .jspred_position_up_text{
+	font-size: 8px;
+	color:#13cf00;
+}
+#joomsport-container .jspred_highlited{
+	background-color: #FBDE2D !important;
+}
+.jspred_success{
+	color: #46b450;
+	border: 1px solid #46b450;
+	margin: 10px 0px;
+	padding: 10px;
+}
+.jspred_message_login{
+	color: #cc0000;
+	border: 1px solid #cc0000;
+	margin: 10px 0px;
+	padding: 10px;
+}
+
+#jsMatchViewID .jspred_match_block > h3 { text-align: center; margin-top: 25px; }
+#jsMatchViewID .jspred_match_block > div, #jsMatchViewID .jspred_match_block > table{ width: 450px; margin: 0 auto 5px; }
+#jsMatchViewID .jspred_match_block > table { table-layout: fixed; border-collapse: separate; border-spacing: 3px 0; }
+#jsMatchViewID .jspred_match_block > table th, #jsMatchViewID .jspred_match_block > table td{ text-align: center; }
+#jsMatchViewID .jspred_match_block > div{ display: table; }
+#jsMatchViewID .jspred_match_block div > div { position: relative; border-left: 1px solid #e0e0e0; text-align: center; }
+#jsMatchViewID .jspred_match_block div > div, #jsMatchViewID .jspred_match_block > table td{ border-bottom: 1px solid #bbb; padding: 5px 10px; background-color: #f5f5f5; }
+#jsMatchViewID .jspred_match_block div > div:first-child{ border-left: none; }
+#jsMatchViewID .jspred_match_block .jspred_match_score { font-weight: bold; }
+#jsMatchViewID .jspred_match_block span.jspred_match_perc { position: absolute; top: 0; left: 0; display: block; height: 100%; background-color: rgba(170, 170, 170, .5); }
+
+#joomsport-container .navbar-nav .btn{padding: 5px 10px; font-size: 14px; line-height: 24px; }
+#joomsport-container .navbar-nav .btn i.js-squad{ background: url(../images/jsport-ico-24.png) -168px 0; }
+#joomsport-container .navbar-nav .btn:hover i.js-squad{ background: url(../images/jsport-ico-24.png) -144px 0 no-repeat; }
+#joomsport-container .navbar-nav .btn i.js-itlist{ background: url(../images/jsport-ico-24.png) -648px 0; }
+#joomsport-container .navbar-nav .btn:hover i.js-itlist{ background: url(../images/jsport-ico-24.png) -624px 0; }
+#joomsport-container .navbar-nav .btn i.js-stand{ background: url(../images/jsport-ico-24.png) -216px 0; }
+#joomsport-container .navbar-nav .btn:hover i.js-stand{ background: url(../images/jsport-ico-24.png) -192px 0; }
+#joomsport-container .navbar-nav .btn i { width: 24px; height: 24px; margin-right: 8px; margin-left: 0; float: left; background-repeat: no-repeat!important; }
+.jspred_not_loggin{
+	height:200px;text-align: center;line-height:200px;
+}
+.jspred_message_login{
+	text-align: center;
+}
+#joomsport-container .table tr.trMyPosition{
+	background-color: #FBDE2D !important;
+}
+.jsPredRoundHeader {
+	margin-bottom: 25px;
+}
+.jsPredUsrTitle {
+	font-size: 20px;
+	font-weight: bold;
+}
+.jsPredUsrTitle > * {
+	vertical-align: middle;
+}
+.jsPredUsrTitle > img {
+	margin-right: 7px;
+}
+.jswDDRounds .input-group > input {
+	display: none!important;
+}
+.btn > input[type="button"] {
+	padding: 0;
+	border: none!important;
+	background: none!important;
+}
+
+/*Prediction widget*/
+.jswUserStatWidget {
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+	text-align: center;
+	font-family: Roboto, Geneva, sans-serif;
+	overflow: hidden;
+}
+.jswUserStatWidgetInfo {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 10px;
+	background-color: #f0f0f0;
+}
+.jswUserStatWidgetName {
+	position: relative;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	line-height: 1;
+	font-size: 18px;
+	font-weight: 700;
+}
+.jswUserStatWidgetName:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: block;
+	width: 24%;
+	height: 1px;
+	margin-left: -12%;
+	background-color: #bdbdbd;
+}
+.jswUserStatWidgetAvatar > img {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.5);
+}
+.jswUserStatWidgetLeagueName {
+	margin-top: 10px;
+	font-size: 14px;
+}
+.jswUserStatWidgetLeague {
+	padding: 10px 0;
+}
+.jswUserStatWidgetLeague:before, .jswUserStatWidgetLeague:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.jswUserStatWidgetLeague > div {
+	width: 50%;
+	float: left;
+	font-size: 14px;
+}
+.jswUserStatWidgetLeague > div + div {
+	border-left: 1px solid #e0e0e0;
+}
+.jswUserStatWidgetLeague > div > div {
+	line-height: 1;
+}
+
+/*Mobile view prediction round*/
+#joomsport-container .jspredMatchBlock {
+	margin-top: 15px;
+}
+#joomsport-container .jspredMatchBlock:first-child {
+	margin-top: 0;
+}
+#joomsport-container .jspredMatchBlock .jspredMatchHead {
+	border-bottom: 1px solid #e4e7ed;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: none;
+	font-weight: 700;
+}
+#joomsport-container .jspredMatchBlock .jspredMatchBody {
+	display: table;
+	width: 100%;
+	padding: 10px 0;
+}
+#joomsport-container .jspredMatchBlock .jspredMatchBody > div {
+	display: table-cell;
+	float: none;
+	vertical-align: middle;
+}
+#joomsport-container .jspredMatchBlock .jspredMatchTeam > .js_div_particName {
+	display: block;
+	padding: 5px 0 0;
+}
+#joomsport-container .jspredMatchBlock .jspredMatchScore input {
+	width: auto;
+	max-width: 35px;
+}
+#joomsport-container .jspredMatchBlock .jspredMatchScore > .jsp_prediction_score,
+#joomsport-container .jspredMatchBlock .jsScoreDiv > a {
+	font-size: 18px;
+}
+#joomsport-container .jspredMatchBlock .jspredMatchScore > div > .jsp_prediction_score {
+	display: inline-block;
+}
+#joomsport-container .jspredMatchBlock .jspredMatchStat {
+	padding-top: 3px;
+}
+.jpBtnDelete {
+	padding:0 15px;
+	color: #ff0000;
+	cursor: pointer;
+}
+#joomsport-container a.poolLink {
+	text-decoration: underline;
+}
+#dialogJSinviteWay a.btn {
+	display:block;
+	color:#ffffff;
+	margin:10px;
+}
+
+/*Prediction private league*/
+/*--Tabs--*/
+#joomsport-container #plTabsContainerdiv .nav-tabs {
+	margin-bottom: 0;
+}
+#joomsport-container #plTabsContainerdiv .nav-tabs > li.active > a {
+	font-weight: 700;
+	color: #B03030;
+	text-decoration: none;
+}
+#plTabsContainerdiv .nav-tabs > li.active a:before, #plTabsContainerdiv .nav-tabs > li.active a:hover:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1.5px;
+	width: 100%;
+	height: 3px;
+	border-radius: 3px;
+	background-color: #2196f3;
+}
+
+/*--Main block--*/
+#joomsport-container .jsright {
+	text-align: right;
+}
+#plTabsContainerdiv .btn {
+	min-width: 66px;
+	text-transform: none;
+}
+#plTabsContainerdiv .tab-content .tab-pane {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#plTabsContainerdiv .tab-content .tab-pane > div {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#joomsport-container .tab-pane div > .table-responsive {
+	margin-top: 30px;
+	margin-bottom: 0;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+}
+#joomsport-container .jsPrivMainBlock > div, #joomsport-container .jsPrivHeaderBlock > a, #joomsport-container .jsPrivHeaderBlockSimple {
+	padding: 15px;
+	border-bottom: 1px solid #e0e0e0;
+}
+#joomsport-container .jsPrivMainBlock > div:last-child {
+	border-bottom: none;
+}
+#joomsport-container .jsPrivHeaderBlock > a, #joomsport-container .jsPrivHeaderBlockSimple {
+	position: relative;
+	display: block;
+	text-align: center;
+	color: #31404b;
+	background-color: #f5f5f5;
+	box-shadow: none;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#joomsport-container .jsPrivHeaderBlock a:hover {
+	opacity: .5;
+	text-decoration: none;
+}
+#joomsport-container .jsPrivHeaderBlock a > div, #joomsport-container .jsPrivHeaderBlockSimple > div {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1;
+	overflow: hidden;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#joomsport-container .jsPrivHeaderBlock a > span, #joomsport-container .jsPrivHeaderBlockSimple > span {
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 13px;
+	line-height: 1;
+	color: #9a9da2;
+}
+#joomsport-container .jsPrivMainBlock > div {
+	font-size: 14px;
+	font-weight: 700;
+}
+#joomsport-container .jsPrivMainBlock .row > div {
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+#joomsport-container .jsPrivMainBlock .row > div:first-child {
+	padding-right: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.jsPrivMainBlock i {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 1px 0;
+	vertical-align: middle;
+}
+.jsPrivMainBlock i:not(.jpBtnDelete) {
+	margin-right: 10px;
+}
+.jsPrivMainBlock i.js-users {
+	background: url(../images/jsport-ico-32.png) -574px 0;
+}
+.jsPrivMainBlock i.js-owner {
+	background: url(../images/jsport-ico-32.png) -1152px 0;
+}
+
+/*--Modal window--*/
+#activeLeagues td, #activeLeagues th, #archiveLeagues td, #archiveLeagues th{
+	white-space: nowrap;
+}
+.jsprDivCopied{
+	position: absolute;
+	width: 100%;
+	display: none;
+	padding: 6px 12px;
+	border-radius: 4px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #666666;
+	color: #ffffff;
+}
+.jspsocial-media .jspmodalMainBlock > div {
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+}
+#jsprInviteLink .spanInviteCopy {
+	display: none;
+}
+.jsp-dialog * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.jsp-dialog i {
+	margin: 0;
+}
+.jsp-dialog.ui-dialog.ui-widget-content {
+	border: 1px solid #e4e7ed;
+	border-radius: 4px;
+	padding: 0;
+	font-family: Roboto, Geneva, sans-serif;
+	font-size: 16px;
+	line-height: 1.42857143em;
+	color: #31404b;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+.jsp-dialog.ui-dialog .jsp-dialog-titlebar {
+	border: none;
+	border-bottom: 1px solid #e4e7ed;
+	border-radius: 0;
+	padding: 15px;
+	background: none;
+	background-color: #fff;
+}
+.jsp-dialog.ui-dialog .ui-dialog-title {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.2em;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #31404b;
+}
+.jsp-dialog.ui-dialog .ui-dialog-content {
+	padding: 15px;
+}
+.jsp-dialog.ui-dialog input, .jsp-dialog.ui-dialog select, .jsp-dialog.ui-dialog textarea {
+	width: 100%;
+	height: auto;
+	border: 1px solid #e4e7ed;
+	border-radius: 2px;
+	padding: 12px 16px;
+	background: none;
+}
+.jsp-dialog.ui-dialog fieldset {
+	margin: 0;
+	border: none;
+	padding: 0;
+}
+.jsp-dialog.ui-dialog input, .jsp-dialog.ui-dialog select, .jsp-dialog.ui-dialog textarea,
+.jsp-dialog.ui-dialog input::placeholder, .jsp-dialog.ui-dialog select::placeholder, 
+.jsp-dialog.ui-dialog textarea::placeholder {
+	color: rgba(154, 157, 162, 0.4);
+}
+.jsp-dialog.ui-dialog input:focus, .jsp-dialog.ui-dialog select:focus, .jsp-dialog.ui-dialog textarea:focus {
+	color: #31404b;
+}
+.jsp-dialog.ui-dialog .jsp-dialog-content label {
+	display: block;
+	margin-bottom: 5px;
+}
+.jsp-dialog.ui-dialog .jsp-dialog-content input + label, .jsp-dialog.ui-dialog .jsp-dialog-content select + label {
+	margin-top: 20px;
+}
+.jsp-dialog .jspmodalFields > div {
+	margin-bottom: 30px;
+}
+.jsp-dialog .jspmodalHeader {
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-weight: 700;
+}
+.jsp-dialog  .select2-container {
+	width: 100%!important;
+}
+.jsp-dialog  .select2-container .select2-selection--multiple {
+	height: auto;
+	border: 1px solid #e4e7ed;
+	border-radius: 2px;
+	padding: 12px 16px;
+	line-height: 1;
+	font-size: 15px;
+	color: #31404b;
+}
+.jsp-dialog .select2.select2-container--open .select2-selection--multiple {
+	border: 1px solid #38a9ff;
+}
+.jsp-dialog  .select2 > .selection {
+	display: block;
+}
+.jsp-dialog .select2-container .select2-search--inline .select2-search__field::placeholder {
+	color: rgba(154, 157, 162, 0.4);
+}
+.jsp-dialog  .select2.select2-container--open .select2-search--inline .select2-search__field::placeholder {
+	color: #31404b;
+}
+.jsp-dialog .select2-container--default .select2-selection--multiple .select2-selection__choice {
+	border: 1px solid #e4e7ed;
+	padding: 5px;
+	background: #f5f7f9;
+	color: #31404b;
+}
+.jsp-dialog  table tr.jspTableFormLabel td {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #9a9da2;
+	background-color: #f5f7f9;
+}
+.jsp-dialog  table.tblInviteEmail td {
+	padding: 5px;
+}
+.jsp-dialog.ui-dialog .jsp-dialog-buttonpane {
+	margin-top: 0;
+	border-top: 1px solid #e4e7ed;
+	padding: 15px;
+}
+.jsp-dialog.ui-dialog .jsp-dialog-buttonpane .ui-dialog-buttonset {
+	width: 100%;
+	text-align: right;
+}
+.jsp-dialog.ui-dialog .jsp-dialog-buttonpane button {
+	margin: 0;
+}
+.jsp-dialog.ui-dialog .jsp-dialog-buttonpane button:first-child:not(.jsp-success) {
+	float: left;
+}
+
+.jsp-btn, .jsp-btn.ui-button {
+	display: inline-block;
+	margin-bottom: 0;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	outline: none!important;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	font-weight: normal;
+	text-align: center;
+	text-transform: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none!important;
+}
+.jsp-btn:not(.ui-dialog-titlebar-close) > i {
+	padding-right: 7px;
+}
+.jsp-btn.jsp-default, .jsp-btn.jsp-default.ui-button {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+.jsp-btn.jsp-default:focus, .jsp-btn.jsp-default.ui-button:focus {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #8c8c8c;
+}
+.jsp-btn.jsp-default:hover, .jsp-btn.jsp-default.ui-button:hover {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+.jsp-btn.jsp-danger, .jsp-btn.jsp-danger.ui-button {
+	color: #fff;
+	background-color: #d9534f;
+	border-color: #d43f3a;
+}
+.jsp-dialog-buttonpane .jsp-btn.jsp-danger:before {
+	content: "\f014";
+	padding-right: 5px;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 20px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.jsp-btn.jsp-danger:focus, .jsp-btn.jsp-danger.ui-button:focus {
+	color: #fff;
+	background-color: #c9302c;
+	border-color: #761c19;
+}
+.jsp-btn.jsp-danger:hover, .jsp-btn.jsp-danger.ui-button:hover {
+	color: #fff;
+	background-color: #c9302c;
+	border-color: #ac2925;
+}
+.jsp-btn.jsp-success, .jsp-btn.jsp-success.ui-button {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+.jsp-btn.jsp-success:focus, .jsp-btn.jsp-success.ui-button:focus {
+	color: #fff;
+	background-color: #449d44;
+	border-color: #255625;
+}
+.jsp-btn.jsp-success:hover, .jsp-btn.jsp-success.ui-button:hover {
+	color: #fff;
+	background-color: #449d44;
+	border-color: #398439;
+}
+.jsp-btn.jsp-primary, .jsp-btn.jsp-primary.ui-button {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+.jsp-btn.jsp-primary:focus, .jsp-btn.jsp-primary.ui-button:focus {
+	color: #fff;
+	background-color: #286090;
+	border-color: #122b40;
+}
+.jsp-btn.jsp-primary:hover, .jsp-btn.jsp-primary.ui-button:hover {
+	color: #fff;
+	background-color: #286090;
+	border-color: #204d74;;
+}
+.jsp-dialog.ui-dialog .ui-dialog-titlebar-close {
+	right: 15px;
+	width: 24px;
+	height: 24px;
+	line-height: 12px;
+	margin-top: -12px;
+}
+
+#joomsport-container .jstable .jstable-cell.jsalright > .jsDivLineEmbl {
+	margin-left: auto;
+}
+
+#joomsport-container .jstable .jstable-cell.jsalright > .jsDivLineEmbl .js_div_particName {
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+
+#joomsport-container .jsp_prediction_outcome {
+	min-width: 120px;
+}
+#joomsport-container .jsp_prediction_outcome .btn {
+	outline: none!important;
+}
+
+#joomsport-container .jsp_prediction_outcome .btn_success {
+	color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+#joomsport-container .jsp_prediction_outcome .btn_danger {
+	color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+#joomsport-container .jsp_prediction_outcome .btn-group > .btn:nth-last-child(2) {
+	border-top-right-radius: 4px!important;
+    border-bottom-right-radius: 4px!important;
+}
+
+#joomsport-container .jspredOutcomeBtn {
+	font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#joomsport-container .jspredOutcomeBtnDisable {
+/* 	cursor: not-allowed; */
+	pointer-events: none;
+}
+
+@media (max-width: 767px) {
+	#plTabsContainerdiv .tab-content .tab-pane > div {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+	}
+}
+@media (min-width: 768px) {
+	#plTabsContainerdiv .tab-content .tab-pane > div {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+	}
+}
+@media (min-width: 992px) {
+	#plTabsContainerdiv .tab-content .tab-pane > div {
+		min-width: 300px;
+	}
+}
+@media (min-width: 1200px) {
+	#plTabsContainerdiv .tab-content .tab-pane > div {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		min-width: 365px;
+	}
+}
+
+/* Mobile round matches */
+.jsMatchPredContainer {
+	margin-bottom: 20px;
+}
+.jsMatchPredItem {
+	border: 1px solid #e4e7ed;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+.jsMatchPredItem:not(:last-child) {
+	margin-bottom: 15px;
+}
+.jsMatchPredHeader, .jsMatchPredMain, .jsMatchPredFooter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 15px;
+}
+.jsMatchPredHeader {
+	border-bottom: 1px solid #e4e7ed;
+	font-weight: 700;
+	background: #f5f7f9;
+}
+.jsMatchPredLink {
+	font-weight: 400;
+}
+.jsMatchPredMain {
+	font-size: 14px;
+}
+.jsMatchPredTeams {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.jsMatchPredTeam {
+	display: flex;
+	align-items: center;
+	min-height: 50px;
+}
+#joomsport-container .jsMatchPredTeam img {
+	min-width: auto;
+	border: none;
+	padding: 0;
+	background-color: transparent;
+}
+.jsMatchPredScore {
+	align-self: stretch;
+}
+.jsMatchPredScore .jsScoreDivM, .jsMatchPredScore .jsp_prediction_score {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	gap: 10px;
+}
+.jsMatchPredScore .jsScoreDivM {
+	position: relative;
+	min-width: 20px;
+}
+.jsMatchPredScore .jsScoreDivM > .jscalendarLiveBig {
+	top: 50%;
+	bottom: auto;
+	right: 0;
+	left: auto;
+	min-width: auto;
+	margin: 0;
+	transform: translateY(-50%);
+}
+.jsMatchPredScore .jsScoreDivM > .BigMScore1, .jsMatchPredScore .jsScoreDivM > .BigMScore2 {
+	width: auto;
+	padding: 0;
+	font-size: 18px;
+	color: inherit;
+	background-color: transparent;
+}
+.jsMatchPredScore .jsp_prediction_score {
+	min-width: auto;
+	font-size: 0px;
+}
+.jsMatchPredFooter {
+	border-top: 1px solid #e4e7ed;
+	font-weight: 700;
+}
+.jsMatchPredScorePredicted > .jsp_prediction_score {
+	display: inline-block;
+}
